@@ -25,16 +25,16 @@ const Navbar = () => {
             <div className="fixed top-0 left-0 w-full z-50 pt-4 px-4 flex justify-center pointer-events-none">
                 <nav className="w-full max-w-7xl bg-cream/90 backdrop-blur-md shadow-lg rounded-2xl pointer-events-auto border border-white/20">
                     <div className="px-4 lg:px-8">
-                        <div className="flex justify-between items-center h-16 md:h-20 opacity-100">
+                        <div className="flex justify-between items-center h-16 lg:h-20 opacity-100">
                             {/* Logo */}
                             <Link to="/" className="font-spectral font-bold text-2xl text-chocolate cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
                                 Sweetbox<span className="text-warm-orange">.</span>
                             </Link>
 
                             {/* Desktop Menu */}
-                            <div className="hidden md:flex items-center gap-8">
+                            <div className="hidden lg:flex items-center gap-8">
                                 <button onClick={() => handleNavigation('products')} className="text-chocolate hover:text-warm-orange font-medium transition-colors">Hampers</button>
-                                <button onClick={() => handleNavigation('products')} className="text-chocolate hover:text-warm-orange font-medium transition-colors">Cakes</button>
+                                <Link to="/cakes" className="text-chocolate hover:text-warm-orange font-medium transition-colors">Cakes</Link>
                                 <Link to="/about" className="text-chocolate hover:text-warm-orange font-medium transition-colors">About Us</Link>
                                 <button onClick={() => handleNavigation('how-it-works')} className="text-chocolate hover:text-warm-orange font-medium transition-colors">How to Order</button>
                                 <button
@@ -46,7 +46,7 @@ const Navbar = () => {
                             </div>
 
                             {/* Mobile Menu Button */}
-                            <div className="md:hidden">
+                            <div className="lg:hidden">
                                 <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-chocolate focus:outline-none">
                                     <Menu className="w-8 h-8" />
                                 </button>
@@ -79,8 +79,15 @@ const Navbar = () => {
                             onClick={() => handleNavigation('products')}
                             className="hover:text-chocolate transition-colors animate-[fadeIn_0.5s_ease-out_0.2s_both]"
                         >
-                            Hampers & Cakes
+                            Hampers
                         </button>
+                        <Link
+                            to="/cakes"
+                            onClick={() => setIsMenuOpen(false)}
+                            className="hover:text-chocolate transition-colors animate-[fadeIn_0.5s_ease-out_0.2s_both]"
+                        >
+                            Artisan Cakes
+                        </Link>
                         <Link
                             to="/about"
                             onClick={() => setIsMenuOpen(false)}

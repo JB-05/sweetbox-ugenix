@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
+import Cakes from './pages/Cakes';
 import SplashScreen from './components/SplashScreen';
 
 // Placeholder Pages
@@ -22,6 +23,7 @@ function App() {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/products" element={<ProductList />} />
+                    <Route path="/cakes" element={<Cakes />} />
                 </Routes>
             )}
         </div>

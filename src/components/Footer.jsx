@@ -24,9 +24,14 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto px-4 pt-8 mt-8 border-t border-white/10 text-center text-xs text-gray-500">
+            <div className="max-w-7xl mx-auto px-4 pt-8 mt-8 border-t-2 border-dotted border-white/20 text-center text-xs text-gray-500">
                 &copy; 2026 Sweetbox. All rights reserved.
             </div>
+            <div className="w-full flex flex-col items-center relative overflow-hidden mt-8 select-none">
+                <h1 className="text-[25vw] leading-none font-['Rochester'] text-soft-peach/5">Sweetbox</h1>
+                <span className="font-sans text-honey-gold/60 text-sm md:text-xl mt-[-2vw] mr-[15%] self-end">by Ugenix</span>
+            </div>
+
         </footer>
     );
 };

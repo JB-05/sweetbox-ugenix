@@ -19,9 +19,10 @@ export default {
             fontFamily: {
                 'spectral': ['Spectral', 'serif'],
                 'inter': ['Inter', 'sans-serif'],
-                'caveat': ['Caveat', 'cursive']
+                'caveat': ['Caveat', 'cursive'],
+                'rochester': ['Rochester', 'cursive']
             }
-        },
+        }
     },
     plugins: [],
 }
