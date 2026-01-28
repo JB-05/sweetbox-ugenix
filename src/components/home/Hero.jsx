@@ -12,7 +12,7 @@ const Hero = ({ scrollToSection }) => {
                 {/* Text Content */}
                 <div className="space-y-6 md:space-y-8 fade-in-up order-2 md:order-1 text-center md:text-left">
                     <div className="flex justify-center md:justify-start">
-                        <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-warm-orange border border-warm-orange/20 rounded-full text-xs md:text-sm font-bold tracking-wide shadow-sm">
+                        <span className="inline-flex items-center gap-2 px-4 py-2 bg-white text-warm-orange border-2 animate-border-shimmer rounded-full text-xs md:text-sm font-bold tracking-wide shadow-sm">
                             <span className="text-yellow-500">✨</span> Delivering Happiness in Thiruvalla
                         </span>
                     </div>

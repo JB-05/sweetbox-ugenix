@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../public/logo/darkmode-text.png';
 
 const Footer = () => {
     return (
         <footer className="bg-deep-mocha text-cream py-12 border-t border-chocolate">
             <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8 text-sm">
                 <div className="space-y-4">
-                    <h3 className="font-spectral font-bold text-2xl">Sweetbox<span class="text-warm-orange">.</span></h3>
+                    <img src={logo} alt="Sweetbox" className="h-10 mb-4" />
                     <p className="text-gray-400">An initiative of Ugenix Technologies LLP.</p>
                 </div>
                 <div className="space-y-4">

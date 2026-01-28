@@ -12,6 +12,24 @@
     .animate-bounce-slow {
         animation: bounce 3s infinite;
     }
+
+    .animate-border-shimmer {
+        animation: borderShimmer 3s infinite;
+    }
+}
+
+@keyframes borderShimmer {
+
+    0%,
+    100% {
+        border-color: #E67E22;
+        /* warm-orange */
+    }
+
+    50% {
+        border-color: #FFE5D4;
+        /* soft-peach - creates the shine effect */
+    }
 }
 
 @keyframes fadeInUp {

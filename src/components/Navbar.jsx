@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Menu, X, Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
 import { openWhatsApp } from '../utils/whatsapp';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
+import logo from '../public/logo/lightmode-text.png';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,8 +28,8 @@ const Navbar = () => {
                     <div className="px-4 lg:px-8">
                         <div className="flex justify-between items-center h-16 lg:h-20 opacity-100">
                             {/* Logo */}
-                            <Link to="/" className="font-spectral font-bold text-2xl text-chocolate cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
-                                Sweetbox<span className="text-warm-orange">.</span>
+                            <Link to="/" className="cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+                                <img src={logo} alt="Sweetbox" className="h-10 lg:h-11 w-auto" />
                             </Link>
 
                             {/* Desktop Menu */}
