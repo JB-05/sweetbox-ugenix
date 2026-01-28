@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import logo from '../public/logo/lightmode-text.png';
 
 const SplashScreen = ({ onFinish }) => {
     const [isVisible, setIsVisible] = useState(true);
@@ -24,8 +25,8 @@ const SplashScreen = ({ onFinish }) => {
 
                 {/* Logo Container */}
                 <div className="relative z-10 flex flex-col items-center space-y-4">
-                    <div className="text-6xl md:text-8xl font-spectral font-bold text-chocolate animate-bounce-slow">
-                        Sweetbox<span className="text-warm-orange">.</span>
+                    <div className="animate-bounce-slow">
+                        <img src={logo} alt="Sweetbox" className="h-16 md:h-24 w-auto" />
                     </div>
                     <div className="w-16 h-1 bg-gray-200 rounded-full overflow-hidden mt-4">
                         <div className="h-full bg-warm-orange animate-[loading_2s_ease-in-out_infinite]"></div>
