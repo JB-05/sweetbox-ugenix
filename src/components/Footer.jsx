@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../public/logo/darkmode-text.png';
+import ugenixLogo from '../public/logo/Ugenix Logo Long darkmode.svg';
 
 const Footer = () => {
     return (
@@ -25,12 +26,24 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="max-w-7xl mx-auto px-4 pt-8 mt-8 border-t-2 border-dotted border-white/20 text-center text-xs text-gray-500">
-                &copy; 2026 Sweetbox. All rights reserved.
-            </div>
+
             <div className="w-full flex flex-col items-center relative overflow-hidden mt-8 select-none">
                 <h1 className="text-[25vw] leading-none font-['Rochester'] text-soft-peach/5">Sweetbox</h1>
                 <span className="font-sans text-honey-gold/60 text-sm md:text-xl mt-[-2vw] mr-[15%] self-end">by Ugenix</span>
+            </div>
+
+
+            <div className="max-w-7xl mx-auto px-4 pt-8 mt-8 border-t-2 border-dotted border-white/20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+                <div className="text-center md:text-left">
+                    &copy; 2026 Sweetbox. All rights reserved.
+                </div>
+
+                <div className="flex items-center gap-2">
+                    <span>Designed and Developed by</span>
+                    <a href="https://ugenix.in" target="_blank" rel="noopener noreferrer" className="opacity-70 hover:opacity-100 transition-opacity">
+                        <img src={ugenixLogo} alt="Ugenix Technologies" className="h-6" />
+                    </a>
+                </div>
             </div>
 
         </footer>

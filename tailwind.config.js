@@ -21,6 +21,21 @@ export default {
                 'inter': ['Inter', 'sans-serif'],
                 'caveat': ['Caveat', 'cursive'],
                 'rochester': ['Rochester', 'cursive']
+            },
+            animation: {
+                'gradient-x': 'gradient-x 2s linear infinite',
+            },
+            keyframes: {
+                'gradient-x': {
+                    '0%': {
+                        'background-size': '200% 200%',
+                        'background-position': '0% 50%',
+                    },
+                    '100%': {
+                        'background-size': '200% 200%',
+                        'background-position': '200% 50%',
+                    },
+                },
             }
         }
     },

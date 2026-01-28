@@ -21,7 +21,14 @@ const ValentinesCTA = () => {
             </div>
 
             <div className="max-w-3xl mx-auto relative z-10 space-y-8">
-                <span className="inline-block bg-terra-cotta/90 backdrop-blur-sm text-xs font-bold px-4 py-1.5 rounded-full tracking-widest uppercase border border-white/10 shadow-lg">Limited Time Offer</span>
+                <span className="relative inline-block rounded-full p-[1px] overflow-hidden shadow-lg group">
+                    <span className="absolute inset-0 bg-gradient-to-r from-honey-gold via-white to-honey-gold animate-gradient-x opacity-70"></span>
+                    <span className="relative block px-5 py-1.5 bg-terra-cotta rounded-full">
+                        <span className="bg-gradient-to-r from-white via-honey-gold to-white bg-[length:200%_auto] bg-clip-text text-transparent animate-gradient-x font-bold tracking-widest uppercase text-xs">
+                            Limited Time Offer
+                        </span>
+                    </span>
+                </span>
 
                 <div className="space-y-4">
                     <h2 className="font-spectral font-bold text-4xl md:text-6xl leading-tight">
